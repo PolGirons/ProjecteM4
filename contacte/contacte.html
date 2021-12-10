@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Formulari de contacte</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Web FCBarcelona">
+    <meta name="keywords" content="Fcbarcelona, entrades, jugadors, botiga">
+    <meta name="author" content="Pol Girons">
+    <meta http-equiv="refresh" content="30">
+	
+</head>
+<body>
+	<div id ="principal"> </div>
+<header>
+	<div id="logo">
+		<h2 class="Titol">Posa't un contacte amb nosaltres</h2>
+		</div>
+	</header>
+<h3>Omple les teves dades</h3>
+
+<form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+Nom <br/>
+<input type="text" name="nombre" value="" size="20" maxlength="30" />
+
+<br/>
+
+Cognoms <br/>
+<input type="text" name="apellidos" value="" size="50" maxlength="80" />
+
+<br/>
+
+Correu electrònic <br/>
+<input id="emailAddress" type="email">
+
+<br/>
+
+DNI <br/>
+<input type="text" name="dni" value="" size="10" maxlength="9" />
+
+<br/>
+
+Sóc soci del FCBarcelona <br/>
+<input type="radio" name="soci" value="si" checked="checked" /> Sí <br/>
+<input type="radio" name="soci" value="no" /> No
+
+<br/><br/>
+
+<div>
+    <label for="uname">Escrigui la seva consulta </label>
+    <input type="text" id="uname" name="name" required size="10"
+           placeholder=""
+           minlength="4" maxlength="100"
+           style="width: 500px"/>
+         
+    <span class="validity"></span>
+  </div>
+
+<input name="Autoritzo" type="checkbox" value="Autoritzo" checked="checked"/> Autoritzo a que s'utilitzen les dades personals així com el email que facilito per a la comunicació de la incidència. Per més informació pots mirar la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673">Ley Orgánica 3/2018</a> i el <a href="https://rgpd.es">Reglamento General de Protección de Datos </a> per informart-te de com i perquè emmagatzamem les teves dades.
+
+<br/><br/>
+
+<input type="submit" name="enviar" value="Enviar Formulari" />
+<input type="reset" name="limpiar" value="Borrar les dades introduides" />
+
+
+</form></body>
